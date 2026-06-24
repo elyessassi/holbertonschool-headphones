@@ -1,0 +1,342 @@
+.Hero {
+    width: 100vw;
+    height: 1100px;
+    background-image: url("images/headphones_hero_1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+h3, p, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button{
+    all: unset;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    width: 71.5vw;
+    height: 42px;
+    margin-top: 2.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    width: 350px;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-link {
+    color: white;
+    font-family: 'Source Sans Pro', 'Source Sans 3', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.nav-link:hover {
+    color: #FF6565;
+}
+
+.ham-menu {
+    width: 20px;
+    height: 14px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.ham-menu span:nth-child(2) {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    border-radius: 2px;
+
+    transition: transform 0.3s ease , opacity 0.3s ease;
+}
+
+.ham-menu span:nth-child(3) {
+    width: 65%;
+    height: 2px;
+    background-color: white;
+    border-radius: 2px;
+
+    transition: transform 0.3s ease , opacity 0.3s ease;
+}
+
+
+.ham-menu span:nth-child(4) {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    border-radius: 2px;
+
+    transition: transform 0.3s ease , opacity 0.3s ease;
+}
+
+#toggle{
+    opacity: 0;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+
+#toggle:checked ~ body {
+    background-color: red;
+}
+
+#toggle:checked + span {
+    transform: rotate(45deg) translateY(8px);
+}
+
+#toggle:checked + span + span {
+    opacity: 0;
+}
+
+#toggle:checked + span + span + span {
+    transform: rotate(-45deg) translateY(-8px);
+}
+
+
+.menu-balancer {
+    height: 10px;
+    width: 10px;
+    display: none;
+}
+
+.toggled-nav-menu {
+    height: 100px;
+    display: none;
+    flex-direction: column;
+    width: 120px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.hero-content {
+    height: 450px;
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between ;
+    margin-bottom: 150px;
+}
+
+.hero-content .titles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 83px;
+}
+
+.hero-content .titles h1 {
+    color: white;
+    font-size: 32px;
+    font-family: 'Source Sans Pro', 'Source Sans 3', sans-serif;
+    font-weight: bold;
+
+}
+
+.hero-content .titles h3 {
+    color: white;
+    font-size: 16px;
+    font-family: 'Source Sans Pro', 'Source Sans 3', sans-serif;
+    font-weight: bold;
+}
+
+.hero-content button {
+    width: 225px;
+    height: 60px;
+    font-size: 14px;
+    font-family: 'Source Sans Pro', 'Source Sans 3', sans-serif;
+    font-weight: bold;
+    background-color: #FF6565;
+    color: white;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    filter: drop-shadow(0 0 5rem black);
+}
+
+.hero-content p {
+    color: white;
+    font-size: 16px;
+    font-family: 'Source Sans Pro', 'Source Sans 3', sans-serif;
+    text-align: center;
+}
+
+.section2 {
+    height: 713px;
+    width: 100vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+
+.section2 div:first-child {
+    width: 640px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+
+.section2 div:first-child h1{
+    font-size: 32px;
+    font-family: 'Source Sans Pro', 'Source Sans 3', sans-serif;
+    font-weight: bold;
+}
+
+.section2 div:first-child p{
+    font-size: 16px;
+    font-family: 'Source Sans Pro', 'Source Sans 3', sans-serif;
+    text-align: center;
+    line-height: 29px;
+}
+
+.section2-icons {
+    width: 70vw;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section2-icons > span {
+    height: 200px;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+}
+
+.section2-icons span h3 {
+    font-size: 18px;
+}
+
+.section2-icons span p {
+    font-size: 14px;
+}
+
+.holberton_school-icon-ic_sound, .holberton_school-icon-ic_video, .holberton_school-icon-ic_music, .holberton_school-icon-ic_hearing {
+    font-size: 60px;
+    color: #FF6565;
+}  
+
+.section2-icon-desc {
+    height: 52px;
+    text-align: center;
+    font-family: 'Source Sans Pro', 'Source Sans 3', sans-serif;
+    
+}
+
+.section2-icon-title {
+    color: #071629;
+    font-family: 'Source Sans Pro', 'Source Sans 3', sans-serif;
+}
+
+        
+
+@media (max-width: 768px) {
+    .navbar {
+        width: 82vw;
+    }
+
+    .nav-links {
+        width: 255px;
+    }
+
+    .hero-content {
+        width: 85vw;
+
+    }
+    .hero-content button {
+        width: 162px;
+        height: 44px;
+    }
+
+    .section2-icons {
+        width: 60vw;
+        height: 500px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .section2 {
+        height: 970px;
+    }
+}
+
+@media (max-width: 475px){
+    .nav-links {
+        display: none;
+    }
+    .ham-menu {
+        display: flex;
+    }
+    .menu-balancer {
+        display: block;
+    }
+    .navbar:has(.ham-menu #toggle:checked) ~ .toggled-nav-menu {
+        display: flex;
+    }
+    .Hero:has(.navbar .ham-menu #toggle:checked){
+        height: 1200px;
+    }
+    .hero-content {
+        width: 95vw;
+        height: 620px;
+    }
+    
+}
+
+@media (max-width: 600px){
+    .section2-icons {
+        display: flex;
+        flex-direction: column;
+        height: 1020px;
+    }
+    .section2{
+        height: 1638px;
+    }
+    .section2 div:first-child {
+        width: 390px;
+        height: 288px;
+    }
+
+}
+

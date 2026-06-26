@@ -200,7 +200,8 @@ body {
     justify-content: space-between;
     padding-top: 110px;
     padding-bottom: 110px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .section2 div:first-child {
@@ -334,6 +335,7 @@ body {
     }
     .section2{
         height: 1638px;
+        width: 338px;
     }
     .section2 div:first-child {
         width: 390px;

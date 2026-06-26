@@ -192,7 +192,7 @@ body {
 
 .section2 {
     height: 771px;
-    width: 100vw;
+    width: 1260px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -200,6 +200,7 @@ body {
     justify-content: space-between;
     padding-top: 110px;
     padding-bottom: 110px;
+    margin: auto;
 }
 
 .section2 div:first-child {
